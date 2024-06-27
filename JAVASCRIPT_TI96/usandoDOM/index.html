@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando HTML</title>
+
+    <style>
+        .conteudo{display: flex;
+        justify-content: space-around;
+            
+    
+    }
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <h1 class="vouManipular">Chaves</h1>
+
+    <div class="conteudo">
+        <div class="titulo">Numero</div>
+
+        <div>
+            <input class="entrada" type="text"
+            placeholder="Digite um numero">
+        </div>
+
+        <div class="saida">Resposta</div>
+
+
+    </div>
+
+    <div>
+
+        <button class="btn">Cadastrar</button>
+
+    </div>
+
+
+<!-- Abrindo o ecript do JavaScript no html -->
+    <script>
+
+        //Alterando o HTML
+
+        var titulo=document.querySelector(".titulo");
+        titulo.innerHTML="Novo Nome"
+        console.log(titulo)
+
+
+        var teste=document.querySelector(".vouManipular")
+        titulo.innerHTML = "Naruyto "
+
+        var resposta=document.querySelector(".saida")
+        resposta.innerHTML="Aqui vai ser a minha resposta"
+
+        // Quando for manipular um input eu uso value
+        var entradaDados=document.querySelector(".entrada")
+        // Para pegar o valor de dentro do input vou usar o value
+        entradaDados.value="conteudo interno"
+
+         
+        
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

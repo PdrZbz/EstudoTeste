@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1 class="titulo1">Esse é o titulo</h1>
+        <div>
+            <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam minima, consequuntur 
+            praesentium ducimus nisi? Vero iusto eaque, laboriosam porro mollitia iure ut dicta perspiciatis corrupti. Accusantium qui voluptates laborum!</p>
+    
+        
+
+             <h2 class="subtitulo">Esse é o H2 na primeira posição</h2>
+
+            <h2 class="subtitulo">Esse é o H2 na segunda posição </h2>
+        </div>
+    </div>
+
+    <script>
+
+        var titulo1=document.querySelector(".titulo1");
+        titulo1.innerHTML="Naruto"
+        
+
+        var paragrafo=document.querySelector(".paragrafo");
+        paragrafo.innerHTML="Naruto é um órfão que, quando era um recém-nascido, teve um monstro conhecido como a Raposa de Nove Caudas selada dentro de seu corpo pelo seu pai, o Quarto Hokage, Minato Namikaze, o líder da força ninja do País do Fogo, ao custo de sua própria vida."
+        
+        var subtitulo=document.querySelectorAll(".subtitulo")
+        subtitulo[0].innerHTML = "Eu sabo, sabendo "
+        subtitulo[1].innerHTML = "Você trazeu a bomba nas mões? "
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando IMC</title>
+ 
+ 
+    <style>
+ 
+    .container{width:100%; padding-top: 5%;}
+    
+    .titulo1{text-align: center;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;}
+
+
+    .caixa{
+            margin-bottom: 3%;
+    }
+
+    .conteudo{display: flex;
+    }
+
+    fieldset{display: flex;
+    flex-direction: column;}
+
+
+    .fonte{font-family: 'Times New Roman', Times, serif ;
+        color: rgb(255, 255, 255);
+        font-size: 20px;}
+
+    .fundo{border: rgb(226, 8, 8) 2px solid;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    margin: auto;
+    padding: 2% 5%;
+    text-align: center;}
+
+    .rotulo{width: 30%;
+    clear: both;}
+    
+    button{width: 100px;
+    height: 50px;
+    text-align: center;}
+
+    .btn{padding-left: 10%;
+    padding-right: 10%;}
+    
+    img{width: 50%;
+    padding-left: 25%;
+    padding-top: 4%;
+    }
+
+    body{background-color: black;}
+
+    </style>
+   
+</head>
+ 
+ 
+ 
+<body>
+    <img  src="img/pessoas1.jpg" alt="ber">
+    <div class="container">
+ 
+                <fieldset class="fonte fundo  back">
+                    <legend class="titulo1">Calculando IMC</legend>
+ 
+                    <div class="conteudo">
+                        <label for="nome" class="rotulo distancia2">Nome: </label>
+                        <input type="text"
+                           id="nome"
+                           name="txtNome"
+                           maxlength="60"
+                           autocomplete="off"
+                           required
+                           class="caixa">
+ 
+                           <label for="data_nasc" class="rotulo distancia">Data de Nascimento: </label>
+                           <input type="date" name="dataNasc" id="data_nasc" class="caixa">
+
+                    </div>
+
+                    <div>
+                        <label for="altura" class="rotulo distancia">Altura: </label>
+                           <input type="number" name="Altura" id="altura" class="caixa">
+
+                           <label for="peso" class="rotulo distancia">Peso: </label>
+                           <input type="number" name="Peso" id="peso" class="caixa">
+    
+    
+    
+                    </div>
+
+                    <div class="btn">
+                        <button id="calcular">Calcular</button>
+
+                    </div>
+                    
+
+                </fieldset> 
+
+             
+                
+    </div>
+
+    <div class="container">
+        <fieldset class="fonte fundo">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Idade</th>
+                        <th scope="col">Altura</th>
+                        <th scope="col">Peso</th>
+                        <th scope="col">IMC</th>
+                        <th scope="col">Situação</th>
+
+
+                    </tr>
+
+
+
+
+                </thead>
+
+
+            </table>
+
+
+
+        </fieldset>
+
+
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+ 
+   
+</body>
+</html>
